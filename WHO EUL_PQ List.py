@@ -2,7 +2,7 @@ import requests
 import re
 from os import path
 
-# get response from WHO
+# Get response from WHO
 url = 'https://extranet.who.int/pqweb/key-resources/documents/status-covid-19-vaccines-within-who-eulpq-evaluation-process'
 r = requests.get(url)
 
