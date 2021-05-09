@@ -10,7 +10,7 @@ r = requests.get(url)
 filename = re.findall('(?:.+\/)(.+)',r.url)[0]
 
 # Save file if there's latest version
-if path.exists( filename):
+if path.exists(filename):
     print('Latest verson already in folder. Please come back several days later!')
 else:
     with open(filename, 'wb') as f:
